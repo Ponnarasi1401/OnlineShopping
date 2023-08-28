@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<display-name>Online Shopping</display-name>
+	<welcome-file-list>
+		<welcome-file>HomePage.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<servlet>
+		<servlet-name>bbb</servlet-name>
+		<servlet-class>UserDetails.Users</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>bbb</servlet-name>
+		<url-pattern>/log</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ccc</servlet-name>
+		<servlet-class>UserDetails.Users</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ccc</servlet-name>
+		<url-pattern>/signup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>aaa</servlet-name>
+		<servlet-class>Shopping.Product_List</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>aaa</servlet-name>
+		<url-pattern>/productlist/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>eee</servlet-name>
+		<servlet-class>Shopping.Cart_List</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>eee</servlet-name>
+		<url-pattern>/cart/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>fff</servlet-name>
+		<servlet-class>Shopping.PurchasedItems</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>fff</servlet-name>
+		<url-pattern>/buy/*</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ggg</servlet-name>
+		<servlet-class>UserDetails.Address</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>ggg</servlet-name>
+		<url-pattern>/address</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>hhh</servlet-name>
+		<servlet-class>PaymentDetails.Account</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>hhh</servlet-name>
+		<url-pattern>/pay</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>iii</servlet-name>
+		<servlet-class>UserDetails.Admin</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>iii</servlet-name>
+		<url-pattern>/admin/*</url-pattern>
+	</servlet-mapping>
+</web-app>
